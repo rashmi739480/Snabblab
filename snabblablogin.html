@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    color:rgb(0, 0, 118);;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(0, 0, 118);;
+    border: none;
+    color: #fff;
+    border-radius: 17px;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  .checkbox-container {
+    margin-bottom: 15px;
+  }
+  .checkbox-container label {
+    margin-left: 5px;
+  }
+  .signup-link {
+    text-align: center;
+  }
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form id="login-form" action="#" method="post">
+      <input type="text" name="email_or_mobile" placeholder="Mobile Number or Email ID" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <div class="forgot-password">
+        <a href="forgotpassword.html">Forgot password?</a>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="remember_me">
+        <label for="remember_me">Remember me</label>
+      </div>
+      <button type="submit" id="login_button">Login</button>
+    </form>
+    <div class="signup-link">
+      <p>Don't have an account? <a href="snabbregister.html">Sign up</a></p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
